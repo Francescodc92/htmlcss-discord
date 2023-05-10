@@ -1,0 +1,68 @@
+/*---Hover effects---*/
+.buttons-primary {
+  transition: background 500ms ease;
+}
+
+.buttons-primary:hover {
+  background-color: #ddd;
+}
+
+.buttons-secondary {
+  transition: background 500ms ease;
+}
+.buttons-secondary:hover {
+  background-color: rgb(44, 43, 43);
+}
+
+.buttons-tertiary {
+  transition: background 500ms ease;
+}
+
+.buttons-tertiary:hover {
+  background-color: #667fd3;
+}
+
+.buttons i {
+  transition: transform 500ms ease;
+}
+
+.buttons:hover i {
+  transform: translateY(5px);
+}
+
+.header-top .container nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  margin-top: 2px;
+  transition: width 500ms ease;
+}
+.header-top .container nav ul li a:hover::after {
+  width: 100%;
+}
+
+.footer-top .container .card-big .socials nav ul li a {
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.footer-top .container .card-big .socials nav ul li a:hover {
+  background-color: #667fd3;
+}
+
+.footer-top .container .card-small nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  transition: width 500ms ease;
+}
+
+.footer-top .container .card-small nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*--------*/
