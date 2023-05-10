@@ -47,18 +47,34 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
 .buttons {
   border: none;
   padding: 10px 20px;
   line-height: 20px;
   border-radius: 20px;
 }
+
+.buttons span {
+  margin-left: 5px;
+}
+
 .buttons-primary {
   color: #000;
   background-color: #fff;
 }
+
 .buttons-secondary {
   background-color: #000;
+  color: #fff;
+}
+
+.buttons-tertiary {
+  background-color: #8ea1e1;
   color: #fff;
 }
 
@@ -166,11 +182,6 @@ section.section-main:nth-of-type(2n) {
   background-color: #d3d3d3;
 }
 
-.section-main .container .content-container .content-left img {
-  max-width: 100%;
-  height: 100%;
-}
-
 .section-main .container .content-container .content-right h2 {
   margin-block: 20px;
   font-size: 32px;
@@ -179,6 +190,40 @@ section.section-main:nth-of-type(2n) {
 .section-main .container .content-container .content-right p {
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+/*---section main big---*/
+.section-main.high {
+  text-align: center;
+}
+
+.section-main.high .container .content-container .text-container {
+  margin-block: 20px;
+}
+
+.section-main.high .container .content-container .text-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-main.high .container .content-container .text-container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.section-main.high .container .content-container .link-wrapper {
+  background-image: url("../img/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: px;
+  width: 35%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.section-main.high .container .content-container .link-wrapper h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 /*----------
@@ -219,15 +264,6 @@ footer .footer-top {
 /*------------
 Debug
 -------------*/
-
-/*---section main debug---*/
-
-/*----section big debug-----*/
-.debug .section-main.high .container .content-container {
-  height: 600px;
-  background-color: #228b22;
-}
-
 /*----footer debug-----*/
 .debug footer {
   background-color: #23272a;
