@@ -16,6 +16,9 @@ General
 .container {
   max-width: 1200px;
   margin-inline: auto;
+}
+
+.flex {
   display: flex;
 }
 
@@ -46,19 +49,17 @@ a {
 
 .buttons {
   border: none;
-  /* height: 50px;
-  width: 100px; */
-  border-radius: 999px;
+  padding: 10px 20px;
+  line-height: 20px;
+  border-radius: 20px;
 }
 .buttons-primary {
   color: #000;
   background-color: #fff;
-  padding: 10px 15px;
 }
 .buttons-secondary {
   background-color: #000;
   color: #fff;
-  padding: 10px 15px;
 }
 
 /*---------
@@ -130,6 +131,11 @@ Header
   margin-block: 25px;
 }
 
+.header-bottom .content-container p {
+  width: 70%;
+  margin-inline: auto;
+  font-size: 13px;
+}
 .header-bottom .content-container .buttons-wrapper {
   margin-top: 30px;
   margin-bottom: 70px;
@@ -142,12 +148,37 @@ Header
 /*----------
 Main
 -----------*/
+.section-main .container .content-container {
+  margin-bottom: 50px;
+}
+
 .section-main .container .content-container .content-left {
   width: 60%;
+  justify-content: flex-end;
 }
 
 .section-main .container .content-container .content-right {
   width: 40%;
+  padding-inline: 50px;
+}
+
+section.section-main:nth-of-type(2n) {
+  background-color: #d3d3d3;
+}
+
+.section-main .container .content-container .content-left img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.section-main .container .content-container .content-right h2 {
+  margin-block: 20px;
+  font-size: 32px;
+}
+
+.section-main .container .content-container .content-right p {
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 /*----------
@@ -190,34 +221,6 @@ Debug
 -------------*/
 
 /*---section main debug---*/
-
-.debug .section-main {
-  background-color: #fff;
-}
-
-.debug .section-main:nth-of-type(2n) {
-  background-color: #d3d3d3;
-}
-
-.debug .section-main .container .content-container {
-  width: 100%;
-  height: 350px;
-  border: 1px dashed;
-}
-
-.debug .section-main .container * {
-  border: 1px dashed black;
-}
-
-.debug .section-main .container .content-container .content-left {
-  height: 100%;
-  background-color: #1e90ff;
-}
-
-.debug .section-main .container .content-container .content-right {
-  height: 100%;
-  background-color: #ffc0cb;
-}
 
 /*----section big debug-----*/
 .debug .section-main.high .container .content-container {
