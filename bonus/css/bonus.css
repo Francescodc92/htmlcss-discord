@@ -85,3 +85,11 @@ section.section-main:nth-of-type(2n):not(:last-of-type):after {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*------------------debug page nitro -------------------------*/
+.debug {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
